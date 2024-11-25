@@ -1,9 +1,8 @@
 plugin: amazon.aws.aws_ec2
 region:
-- us-east-1
+  - us-east-1
 keyed_groups:
-- key: tags['Name']
-
+  - key: tags['Name']
 filters:
   tag:Name: "backend*"
 
